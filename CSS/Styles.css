@@ -2,30 +2,51 @@
     margin: 0%;
     padding: 0%;
 }
+
 .TopbarMain {
     margin-bottom: 25px;
     margin-top: 10px;
+    display: flex;
+;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-img {
-    width: 220px;
+.logo img {
+    width: 180px;
     float: left;
+    cursor: pointer;
 }
 
 .Container {
-    width: 1130px;
+    width: 1280px;
     margin: 0 auto;
+    padding: 20px 50px;
    
+}
+
+ul li:hover {
+    list-style: none;
+    display: inline-block;
+    text-transform: normal;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-family: inter, poppin;
+    font-size: 16px;
+    font-weight: 400px;
+    color: rgb(255, 162, 0);
 }
 
 ul li {
     list-style: none;
     display: inline-block;
-    text-transform: uppercase;
+    text-transform: normal;
     margin-left: 20px;
     margin-top: 15px;
-    font-size: 19px;
-    font-weight: bold;
+    font-family: inter, poppin;
+    font-size: 16px;
+    font-weight: 400px;
+    cursor: pointer;
 }
 
 #BackgroundSlider{
@@ -33,28 +54,57 @@ background-image: url(../Image/frontpage.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: 100%;
+overlay: ;
 
 }
 
 .slidercontent {
-    width: 331px;
+    width: 400px;
     background: #00000052;
     color: white;
-    text-align: center;
+    text-align: left;
     display: inline-block;
     margin-block: 130px;
     font-size: 25px;
     padding: 39px;
+    
+}
+
+.slidercontent p {
+    font-size: 16px;
+    font-family: 'Inter';
+    width: 65%;
+}
+
+.slidercontent h2 {
+    font-size: 45px;
+    line-height: 1.2em;
+    font-family: 'Inter';
+    width: 75%;
 }
 
 button#sliderWorkButton {
-    padding: 10px;
-    border-radius: 2px;
+    padding: 10px 20px;
+    border-radius: 10px;
     border: none;
-    background: #66c430;
+    background: #548b34;
     color: white;
-    font-size: 17px;
+    font-size: 16px;
+    font-family: inter;
+    font-weight: 400px;
     margin-top: 20px;
+    cursor: pointer;
+}
+
+button#sliderWorkButton:hover {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(186, 72, 186);
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: all 2s;
 }
 
 .fa.fa-facebook-official {
@@ -62,14 +112,19 @@ button#sliderWorkButton {
     font-weight: 400;
     background: #057bf5;
     color: white;
-    padding: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
 }
-.fa.fa-facebook, .fa.fa-twitter {
+.fa.fa-twitter {
     font-family: "Font Awesome 5 Brands";
     font-weight: 400;
     background: #00a1ff;
     color: white;
-    padding: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+
 }
 
 .fa.fa-linkedin {
@@ -77,26 +132,54 @@ button#sliderWorkButton {
     font-weight: 400;
     background: #008ef3;
     color: white;
-    padding: 3px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
 }
+
+i.fa.fa-sign-in:hover {
+    color: #dd23bb;
+    cursor: pointer;
+}
+
 i.fa.fa-sign-in {
     color: #66c430;
+    cursor: pointer;
 }
 
 i.fa.fa-google-plus-official {
     background: red;
     color: white;
-    padding: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .mainService {
     width: 249px;
-    padding: 10px;
+    padding: 30px;
     background: #f9f9f9;
     text-align: center;
     margin-top: 50px;
     display: inline-block;
     margin-left: 10px;
+    border-radius: 10px;
+}
+
+.mainService:hover {
+    width: 249px;
+    padding: 30px;
+    background: #e3e3e3;
+    text-align: center;
+    margin-top: 50px;
+    display: inline-block;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition: all 1s;
+}
+.icon-box {
+    display: flex;
+    gap: 10px;
 }
 
 i.fas.fa-users {
